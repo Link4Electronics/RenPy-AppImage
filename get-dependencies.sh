@@ -22,7 +22,7 @@ get-debloated-pkgs --add-common --prefer-nano ffmpeg-mini
 # if you also have to make nightly releases check for DEVEL_RELEASE = 1
 #
 # if [ "${DEVEL_RELEASE-}" = 1 ]; then
-# 	nightly build steps
+ 	#make-aur-package renpy-git
 # else
-# 	regular build steps
+ 	make-aur-package renpy
 # fi
