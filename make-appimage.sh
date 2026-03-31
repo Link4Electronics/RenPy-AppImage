@@ -10,6 +10,7 @@ export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=/usr/share/pixmaps/renpy.png
 export DESKTOP=/usr/share/applications/renpy.desktop
+export STARTUPWMCLASS=
 export DEPLOY_OPENGL=1
 export DEPLOY_SYS_PYTHON=1
 
