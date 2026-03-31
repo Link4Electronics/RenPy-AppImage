@@ -6,15 +6,17 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm \
-    assimp            \
-    ftgl              \
-    libdecor          \
-    python-ecdsa      \
-    python-legacy-cgi \
-    sdl2_gfx          \
-    sdl2_image        \
-    sdl2_mixer        \
+pacman -Syu --noconfirm     \
+    assimp                  \
+    ftgl                    \
+    libdecor                \
+    python-ecdsa            \
+    python-legacy-cgi       \
+    python-setuptools-scm   \
+    python-sphinx_rtd_theme \
+    sdl2_gfx                \
+    sdl2_image              \
+    sdl2_mixer              \
     sdl2_ttf
 
 echo "Installing debloated packages..."
@@ -23,6 +25,7 @@ get-debloated-pkgs --add-common --prefer-nano ffmpeg-mini
 
 # Comment this out if you need an AUR package
 make-aur-package python-pygame-sdl2
+make-aur-package python-sphinx_rtd_dark_mode
 
 # If the application needs to be manually built that has to be done down here
 
