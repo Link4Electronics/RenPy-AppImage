@@ -10,7 +10,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=/usr/share/pixmaps/renpy.png
 export APPNAME=RenPy
 export DEPLOY_OPENGL=1
-export DEPLOY_SYS_PYTHON=1
+export DEPLOY_PYTHON=1
 
 # Deploy dependencies
 chmod +x ./AppDir/bin/renpy.py
