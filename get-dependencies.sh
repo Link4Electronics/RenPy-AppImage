@@ -9,7 +9,6 @@ echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm     \
     assimp                  \
     ftgl                    \
-    libdecor                \
     python-ecdsa            \
     python-legacy-cgi       \
     python-setuptools-scm   \
@@ -20,7 +19,7 @@ pacman -Syu --noconfirm     \
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano ffmpeg-mini sdl2_image-mini
+get-debloated-pkgs --add-common --prefer-nano ffmpeg-mini libdecor-mini sdl2_image-mini
 
 # Comment this out if you need an AUR package
 make-aur-package python-pygame-sdl2
