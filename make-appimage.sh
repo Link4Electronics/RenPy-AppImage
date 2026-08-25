@@ -16,7 +16,5 @@ export DEPLOY_PYTHON=1
 chmod +x ./AppDir/bin/renpy.py
 quick-sharun ./AppDir/bin/*
 
-# Additional changes can be done in between here
-
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
