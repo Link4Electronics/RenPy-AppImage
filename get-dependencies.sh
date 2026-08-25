@@ -21,7 +21,6 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano ffmpeg-mini libdecor-mini sdl2_image-mini
 
-# Comment this out if you need an AUR package
 make-aur-package python-pygame-sdl2
 make-aur-package python-sphinx_rtd_dark_mode
 make-aur-package uuid
